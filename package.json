@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "nyc node test/foo-workerpool.spec.js",
-    "test-fork": "nyc node test/foo-fork.spec.js"
+    "test": "npm run test-fork && npm run test-workerpool",
+    "test-fork": "nyc node test/foo-fork.spec.js",
+    "test-workerpool": "nyc node test/foo-workerpool.spec.js"
   },
   "keywords": [],
   "author": "",
