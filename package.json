@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "npm run test-fork && npm run test-workerpool",
+    "test": "npm run test-fork && npm run test-workerpool && npm run test-spawn",
     "test-fork": "nyc node test/foo-fork.spec.js",
-    "test-workerpool": "nyc node test/foo-workerpool.spec.js"
+    "test-workerpool": "nyc node test/foo-workerpool.spec.js",
+    "test-spawn": "nyc node test/foo-spawn.spec.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^8.2.0",
     "nyc": "^15.1.0"
   },
   "dependencies": {
