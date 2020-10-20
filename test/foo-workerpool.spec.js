@@ -5,7 +5,7 @@ const assert = require("assert");
 
 (async function() {
 
-  const pool = workerpool.pool(require.resolve("./src/foo-workerpool"), {stdio: 'inherit'});
+  const pool = workerpool.pool(require.resolve("./src/foo-workerpool"), {workerType:'process'});
 
   const result = await pool.exec("foo");
 
