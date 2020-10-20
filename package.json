@@ -1,0 +1,19 @@
+{
+  "name": "mocha-nyc-parallel-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha ./test/foo.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "workerpool": "^6.0.2"
+  }
+}
