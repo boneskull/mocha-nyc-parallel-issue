@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "npm run test-fork && npm run test-workerpool && npm run test-spawn",
+    "test": "npm run test-fork && npm run test-workerpool && npm run test-spawn && npm run test-fork-ok",
     "test-fork": "nyc node test/foo-fork.spec.js",
     "test-workerpool": "nyc node test/foo-workerpool.spec.js",
-    "test-spawn": "nyc node test/foo-spawn.spec.js"
+    "test-spawn": "nyc node test/foo-spawn.spec.js",
+    "test-fork-ok": "nyc node test/foo-fork-ok.spec.js"
   },
   "keywords": [],
   "author": "",
